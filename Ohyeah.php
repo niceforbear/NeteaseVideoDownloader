@@ -6,6 +6,14 @@
  * Date: 15/12/16
  * Time: 下午11:11
  */
+
+/*
+ * Step 1:
+ * You could use this class to fetch Netease Open Class(http://open.163.com), you could get a clear
+ * array which include these class orders, names and their links.
+ *
+ * Document of phpquery: http://code.google.com/p/phpquery/
+ */
 class Ohyeah
 {
     const DECIDE_CODE = 1023; # Just for debug;
@@ -96,6 +104,9 @@ class Ohyeah
     }
 }
 
+/**
+ * Demo usage
+ */
 if(!empty($argv)){
     if($argv[1] == Ohyeah::DECIDE_CODE){
         $url = empty($argv[2]) ? 'http://open.163.com/special/opencourse/algorithms.html': $argv[2];
