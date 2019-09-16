@@ -14,7 +14,7 @@
  *
  * Document of phpquery: http://code.google.com/p/phpquery/
  */
-class Ohyeah
+class NVDownloader
 {
     const DECIDE_CODE = 1023; # Just for debug;
 
@@ -114,9 +114,9 @@ class Ohyeah
  * Demo usage
  */
 if (!empty($argv)) {
-    if ($argv[1] == Ohyeah::DECIDE_CODE) {
+    if ($argv[1] == NVDownloader::DECIDE_CODE) {
         $url = empty($argv[2]) ? 'http://open.163.com/special/opencourse/algorithms.html': $argv[2];
-        $oy = new Ohyeah($url);
+        $oy = new NVDownloader($url);
         $oy->finish();
     } else {
         echo "\nwrong\n";
